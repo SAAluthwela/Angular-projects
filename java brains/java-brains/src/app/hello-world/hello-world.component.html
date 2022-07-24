@@ -1,0 +1,14 @@
+<p>hello-world component!</p>
+
+<div>
+  <h1>{{ user.name }}</h1>
+  <h2>{{ user.address }}</h2>
+  <h3>{{ user.designation }}</h3>
+  <h4>{{ user.phone }}</h4>
+</div>
+
+<button (click)="toggleCollapse()">toggleCollapse</button>
+
+<div *ngIf="!isCollapsed">
+  <h3>toggleCollapse!</h3>
+</div>
